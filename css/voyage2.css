@@ -108,7 +108,6 @@ align-content: flex-end;
     justify-content: center;
     align-items: center;
 
-
 }
 
 
@@ -122,12 +121,13 @@ align-content: flex-end;
 
 .separation{ 
     width: 100%;
-    height: 30vh; 
+    height: 50vh; 
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
    display: flex;
   color: white;
   text-align: center;
+
 }
 
 .text_mada{
@@ -135,6 +135,9 @@ align-content: flex-end;
    flex: 1;
    box-shadow: 2px 5px 4px black ;
    text-shadow: black 6px 6px 6px;
+   overflow:   hidden  ;
+
+
 }
 
 .text_bouf{
@@ -142,15 +145,10 @@ align-content: flex-end;
     border: black solid 2px;
     box-shadow: 2px 5px 4px black ;
     text-shadow: black 6px 6px 6px;
+    overflow:   hidden;
+    
 }
 
-.text_pays{
-    flex: 1;
-    border: black solid 2px;
-    box-shadow: 2px 5px 4px black ;
-    text-shadow: black 6px 6px 6px;
-
-}
 
 
 
@@ -165,7 +163,7 @@ align-content: flex-end;
     left: 0;
     right: 0;
     margin: auto;
-    border: white 2px solid;
+  
     }
 
 
@@ -292,6 +290,8 @@ text-decoration: none;
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.911);
+        overflow-y: hidden;
+
     }
 
 .table-style  {
@@ -303,4 +303,98 @@ text-decoration: none;
     border: 2px solid midnightblue;
     width: 50%;
     height: 20%;
+}
+
+
+.ville{
+    padding-top: 30px;
+    border: black 4px solid;
+    align-items: center;
+    font-size: 1.2em;
+
+}
+
+
+.img_bouf{
+        object-fit: cover;
+       background-size:    50px;
+}
+
+
+
+.boxes img{ 
+        border: black 2.5px solid;
+        
+    width:  500px;
+    height: 500px;
+    object-fit: cover;
+    overflow: hidden    ;
+
+
+ }
+
+h4{
+    font-size: 1.5em;
+    color: darkgoldenrod;
+}
+
+#little_text{
+    margin-top: 50px;
+    margin-bottom:50px;
+    font-size: 1.3em;
+}
+
+.img_1{
+
+}
+
+
+
+.slider{
+ margin-left: auto;
+  margin-right: auto;
+  border: solid black 2px ;
+    width: 500px;
+    height: 250px;
+    overflow: hidden;
+  
+   }
+
+
+.slides{
+    width: calc(500px * 4);
+    animation: glisse 25s infinite;
+}
+.slide{
+    float: left;
+}
+
+@keyframes glisse{
+    0% {
+        transform: translateX(0);
+    }
+    12.5% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-500px);
+    }
+    37.5% {
+        transform: translateX(-500px);
+    }
+    50% {
+        transform: translateX(-1000px);
+    }
+    62.5% {
+        transform: translateX(-1000px);
+    }
+    75% {
+        transform: translateX(-1500px);
+    }
+    87.5% {
+        transform: translateX(-1500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
